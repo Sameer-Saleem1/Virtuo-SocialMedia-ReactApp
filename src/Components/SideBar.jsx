@@ -9,13 +9,7 @@ const SideBar = ({ selectedTab, setSelectedTab }) => {
         href="/"
         className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
       >
-        <svg
-          className="bi pe-none me-2"
-          style={{ height: "32px", width: "40px" }}
-        >
-          <use xlinkHref="#bootstrap"></use>
-        </svg>
-        <span className="fs-4">
+        <span className="fs-4 px-4">
           <h2>Virtuo</h2>
         </span>
       </a>
@@ -29,14 +23,11 @@ const SideBar = ({ selectedTab, setSelectedTab }) => {
         >
           <a
             href="#"
-            className={`nav-link text-white  ${
-              selectedTab === "Home" && "active"
+            className={`nav-link   ${
+              selectedTab === "Home" ? "bg-warning text-dark " : "text-white"
             }`}
             aria-current="page"
           >
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlinkHref="#home"></use>
-            </svg>
             Home
           </a>
         </li>
@@ -47,13 +38,12 @@ const SideBar = ({ selectedTab, setSelectedTab }) => {
         >
           <a
             href="#"
-            className={`nav-link text-white  ${
-              selectedTab === "Create Post" && "active"
+            className={`nav-link   ${
+              selectedTab === "Create Post"
+                ? "bg-warning text-dark "
+                : "text-white"
             }`}
           >
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlinkHref="#speedometer2"></use>
-            </svg>
             Create Post
           </a>
         </li>

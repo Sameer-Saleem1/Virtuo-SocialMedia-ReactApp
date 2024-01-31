@@ -30,18 +30,17 @@ body {
   width: 100%;
 }
 
-.sidebar {
-  min-height: 680px;
-}
-
 .sidebarDisplay {
-  width: 280px;
+  min-height: 680px;
+  width: auto;
   background-color: #003d3f;
 }
 
-@media screen and (max-width: 480px) {
-  .sidebarDisplay {
-    max-width: 50px !important;
-    background-color: white !important;
-  }
+.card-container {
+  margin: 20px 50px;
+}
+
+.form-container {
+  width: 80%;
+  margin: 20px 50px;
 }
